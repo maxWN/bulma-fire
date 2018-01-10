@@ -1,6 +1,8 @@
 {
-  "name": "dynamic-content",
+  "name": "bulma-fire",
   "version": "0.0.0",
+  "description": "A set of specialized Angular components based on the Bulma CSS framework.",
+  "author": "Max W.N.",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
