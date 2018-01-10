@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -16,5 +16,53 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul> -->
+<nav class="navbar" role="navigation" aria-label="dropdown navigation">
+  <a class="navbar-item">
+      <i class="icon-attr fa fa-fighter-jet"></i>
+    {{ title }}
+  </a>
 
+  <div class="navbar-item has-dropdown" [ngClass]="{'is-active': displayDropDown}">
+      <a class="navbar-item" href="https://bulma.io/">
+        Home
+      </a>
+      <a class="navbar-item" href="https://bulma.io/">
+        Link#1
+      </a>
+      <a class="navbar-item" href="https://bulma.io/">
+        Link#2
+      </a>
+      <a class="navbar-item" (click)="showDropdown()">
+        Docs
+      </a>
+      <div class="navbar-dropdown">
+        <a class="navbar-item">
+          Overview
+        </a>
+        <a class="navbar-item is-active">
+          Elements
+        </a>
+        <a class="navbar-item">
+          Components
+        </a>
+        <hr class="navbar-divider">
+        <div class="navbar-item">
+          Version 0.6.1
+        </div>
+      </div>
+  </div>
+</nav>
+
+<section class="hero is-primary">
+  <div class="hero-body">
+    <p class="title">
+      Documentation
+    </p>
+    <p class="subtitle">
+      Everything you need to <strong>create a website</strong> with Bulma
+    </p>
+  </div>
+</section>
+
+<app-footer-section></app-footer-section>
