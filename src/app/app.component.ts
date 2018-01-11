@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
-  title = 'Maxico';
+  title = 'Bulma-Fire';
   displayDropDown: boolean = false;
 
   showDropdown():void {

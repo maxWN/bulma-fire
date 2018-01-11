@@ -1,6 +1,44 @@
 .icon-attr {
     transform: rotate(-60deg);
 }
+
 .nav-bar-attr {
     position: fixed;
+}
+
+.navbar {
+    background-color: #000000;
+}
+
+.navbar-item {
+    color: #ffffff;
+}
+
+.navbar.is-black .navbar-start > a.navbar-item:hover, .navbar.is-black .navbar-start > a.navbar-item.is-active,
+.navbar.is-black .navbar-start .navbar-link:hover,
+.navbar.is-black .navbar-start .navbar-link.is-active,
+.navbar.is-black .navbar-end > a.navbar-item:hover,
+.navbar.is-black .navbar-end > a.navbar-item.is-active,
+.navbar.is-black .navbar-end .navbar-link:hover,
+.navbar.is-black .navbar-end .navbar-link.is-active {
+    background-color: #c7cc00;
+    color: #000000;
+}
+
+.navbar.is-black > a.navbar-item:hover {
+    background-color: #c7cc00;
+    color: #000000;
+}
+
+a:hover {
+    color: #363636;
+}
+
+.navbar-dropdown {
+    background-color: #363636;
+}
+
+.navbar.is-black .navbar-dropdown a.navbar-item.is-active {
+    background-color: #c7cc00;
+    color: #000000;
 }
