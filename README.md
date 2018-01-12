@@ -1,9 +1,8 @@
 # Bulma-Fire
 
-## Build
+## Current Project Status
 
 ![alt text](https://bulma.io/images/bulma-logo.png)
 
-`Under construction`
+`This project has recently begun development. More information will provided later.`
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
