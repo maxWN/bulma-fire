@@ -1,3 +1,36 @@
 .hero.is-info {
-    background-color: #000000;
+    // background-color: #ffffff; 
+    // background-image: url('/assets/images/Abstract-Hi-tech-Desktop-Wallpapers.jpg');
+    background-repeat: no-repeat;
+}
+
+.img-one {
+    background-image: url('/assets/images/Abstract-Hi-tech-Desktop-Wallpapers.jpg');
+    // background-repeat: no-repeat;
+}
+
+.img-two {
+    background-image: url('/assets/images/114548.jpg');
+    // background-repeat: no-repeat;
+}
+
+.img-three {
+    background-image: url('/assets/images/blue_binary_code_1024_768.jpg');
+    // background-repeat: no-repeat;
+}
+
+
+.hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle li.is-active a:hover {
+    color: #000000;
+    background-color: #c7cc00;
+    border: .1rem solid #c7cc00;
+}
+
+.carousel-btns {
+    border-radius: 30px;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color:#ffff00;
+    color: #000000;
+    display: inline-block;
 }

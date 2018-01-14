@@ -1,19 +1,22 @@
-<section class="hero is-info is-large">
+<section class="hero is-info is-large" [ngStyle]="{'background-image': 'url(' + currentImage + ')'}">
 
   <div class="hero-body">
     <div class="container has-text-centered">
-      <p class="title">
+      <div class="title">
         Bulma-Fire
-      </p>
-      <p class="subtitle">
-        Subtitle
-      </p>
+      </div>
+      <div class="subtitle ">
+        <div class="carousel-btns" (click)="backward()"> <i class="fa fa-step-backward"></i>
+        </div> Subtitle <div class="carousel-btns" (click)="forward()"> <i class="fa fa-step-forward"></i>
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="hero-foot">
     <nav class="tabs is-boxed is-fullwidth">
       <div class="container">
+        <!-- <img src="assets/images/Abstract-Hi-tech-Desktop-Wallpapers.jpg"> -->
         <ul>
           <li class="is-active">
             <a>Overview</a>
