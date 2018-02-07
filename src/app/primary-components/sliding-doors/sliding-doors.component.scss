@@ -1,0 +1,30 @@
+.container.has-text-centered {
+    background-color: #000000;
+}
+
+.title {
+    display: none;
+}
+.subtitle {
+    display: none;
+}
+
+.left-door {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 200px 200px 0 0;
+    border-color: #969ba1 transparent transparent transparent;
+    display: inline-flex;
+    position: absolute;
+  }
+
+  .right-door {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 200px 200px;
+    border-color: transparent transparent #969ba1 transparent;
+    display: inline-flex;
+    z-index: 2;
+  }  
