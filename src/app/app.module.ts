@@ -7,6 +7,7 @@ import { FooterSectionComponent } from './primary-components/landing-page/footer
 import { MainContentComponent } from './primary-components/landing-page/main-content/main-content.component';
 import { SlidingDoorsComponent } from './primary-components/sliding-doors/sliding-doors.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   { path: "", redirectTo: "/slidingDoors", pathMatch: "full" },
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
