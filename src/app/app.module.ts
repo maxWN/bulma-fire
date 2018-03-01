@@ -10,7 +10,7 @@ import { SlidingDoorsComponent } from './primary-components/sliding-doors/slidin
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
-  { path: "", redirectTo: "/slidingDoors", pathMatch: "full" },
+  { path: "", redirectTo: "/dashboard", pathMatch: "full" },
   { path: "dashboard", component: MainContentComponent },
   { path: "slidingDoors", component: SlidingDoorsComponent }
 ]

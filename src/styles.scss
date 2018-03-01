@@ -14,3 +14,8 @@ body {
     // overflow: hidden;
     overflow-y: scroll;
 }
+@media screen and (min-width: 1024px) {
+a.navbar-item.is-active:not(:hover) {
+    background-color: #c7cc00;
+}
+}

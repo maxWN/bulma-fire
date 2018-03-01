@@ -42,3 +42,8 @@ a:hover {
     background-color: #c7cc00;
     color: #000000;
 }
+
+.navbar.is-black .navbar-dropdown a.navbar-item.is-active:not(:hover) {
+    background-color: #c7cc00;
+    color: #000000;
+}
