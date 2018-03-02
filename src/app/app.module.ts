@@ -8,6 +8,7 @@ import { MainContentComponent } from './primary-components/landing-page/main-con
 import { SlidingDoorsComponent } from './primary-components/sliding-doors/sliding-doors.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { StepLadderComponent } from './primary-components/step-ladder/step-ladder.component';
 
 const appRoutes: Routes = [
   { path: "", redirectTo: "/dashboard", pathMatch: "full" },
@@ -20,7 +21,8 @@ const appRoutes: Routes = [
     AppComponent,
     FooterSectionComponent,
     MainContentComponent,
-    SlidingDoorsComponent
+    SlidingDoorsComponent,
+    StepLadderComponent
   ],
   imports: [
     BrowserModule,

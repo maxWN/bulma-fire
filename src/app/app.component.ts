@@ -12,18 +12,24 @@ export class AppComponent {
   title = 'Bulma-Fire';
   displayDropDown: boolean = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
 
-  showDropdown():void {
+  }
+
+  //region public functions 
+
+  public showDropdown():void {
     this.displayDropDown = !this.displayDropDown;
   }
 
-  showCarousel(): void {
+  public showCarousel(): void {
     this.router.navigate(['/dashboard']);
   }
 
-  showSlidingDoors(): void {
+  public showSlidingDoors(): void {
     this.router.navigate(['/slidingDoors']);
   }
+
+  //endregion public functions
 
 }
