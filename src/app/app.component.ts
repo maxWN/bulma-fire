@@ -30,6 +30,10 @@ export class AppComponent {
     this.router.navigate(['/slidingDoors']);
   }
 
+  public showAnimatedPopup(): void {
+    this.router.navigate(['/animatedPopup']);
+  }
+
   //endregion public functions
 
 }

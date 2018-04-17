@@ -9,11 +9,13 @@ import { SlidingDoorsComponent } from './primary-components/sliding-doors/slidin
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StepLadderComponent } from './primary-components/step-ladder/step-ladder.component';
+import { AnimatedPopupComponent } from './primary-components/animated-popup/animated-popup.component';
 
 const appRoutes: Routes = [
   { path: "", redirectTo: "/dashboard", pathMatch: "full" },
   { path: "dashboard", component: MainContentComponent },
-  { path: "slidingDoors", component: SlidingDoorsComponent }
+  { path: "slidingDoors", component: SlidingDoorsComponent },
+  { path: 'animatedPopup', component: AnimatedPopupComponent }
 ]
 
 @NgModule({
@@ -22,7 +24,8 @@ const appRoutes: Routes = [
     FooterSectionComponent,
     MainContentComponent,
     SlidingDoorsComponent,
-    StepLadderComponent
+    StepLadderComponent,
+    AnimatedPopupComponent
   ],
   imports: [
     BrowserModule,

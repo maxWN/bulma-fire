@@ -1,12 +1,12 @@
 
 <nav class="navbar is-black" role="navigation" aria-label="dropdown navigation">
-  <a class="navbar-item">
+  <a class="navbar-item" (click)="showCarousel()">
       <i class="icon-attr fa fa-fighter-jet"></i>
       {{ title }}
   </a>
 
   <div class="navbar-end navbar-item has-dropdown" [ngClass]="{'is-active': displayDropDown}">
-      <a class="navbar-item" href="https://bulma.io/">
+      <a class="navbar-item" (click)="showCarousel()">
         Home
       </a>
       <a class="navbar-item" href="https://bulma.io/">
@@ -25,8 +25,8 @@
         <a class="navbar-item is-active" (click)="showSlidingDoors()">
           Sliding Doors
         </a>
-        <a class="navbar-item">
-          ###
+        <a class="navbar-item" (click)="showAnimatedPopup()">
+          Animated Popup
         </a>
         <hr class="navbar-divider">
         <div class="navbar-item">
