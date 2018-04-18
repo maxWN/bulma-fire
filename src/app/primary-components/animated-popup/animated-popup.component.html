@@ -1,4 +1,13 @@
-<div class="field">
+<section class="section">
+  <div class="container">
+    <h1 class="title">Section</h1>
+    <h2 class="subtitle">
+      A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+    </h2>
+    <button class="button is-primary" (click)="displayModal()">Show Modal</button>
+
+  </div>
+
 
 <div class="modal"  [ngStyle]="{'display':modalDisplay}">
   <div class="modal-background"></div>
@@ -23,6 +32,4 @@
   </div>
 </div>
 
-  <button class="button is-primary" (click)="displayModal()">Show Modal</button>
-
-</div>
+</section>
