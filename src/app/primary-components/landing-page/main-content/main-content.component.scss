@@ -34,3 +34,7 @@
     color: #000000;
     display: inline-block;
 }
+
+.hero.is-info a:not(.button):not(.dropdown-item):not(.tag), .hero.is-info strong {
+    background-color: #000000;   
+}

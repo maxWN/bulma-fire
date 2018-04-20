@@ -19,13 +19,13 @@
         Components
       </a>
       <div class="navbar-dropdown">
-        <a class="navbar-item" (click)="showCarousel()">
+        <a class="navbar-item" (click)="showCarousel()" [ngClass]="{'is-active': displayCarousel }">
           Carousel
         </a>
-        <a class="navbar-item is-active" (click)="showSlidingDoors()">
+        <a class="navbar-item" (click)="showSlidingDoors()" [ngClass]="{'is-active': displaySlidingDoors }">
           Sliding Doors
         </a>
-        <a class="navbar-item" (click)="showAnimatedPopup()">
+        <a class="navbar-item" (click)="showAnimatedPopup()" [ngClass]="{'is-active': displayPopup }">
           Animated Popup
         </a>
         <hr class="navbar-divider">
