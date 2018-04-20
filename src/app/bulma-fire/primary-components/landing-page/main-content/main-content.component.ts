@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { carouselImage, CarouselImage } from '../../../bulma-fire/models/carousel/carousel-image.model';
+import { carouselImage, CarouselImage } from '../../../models/carousel/carousel-image.model';
 
 @Component({
   selector: 'app-main-content',
