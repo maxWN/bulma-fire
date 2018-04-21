@@ -8,10 +8,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   animations: [
     trigger('popupState', [
       state('show', style({
-        opacity: 1
+        transform: 'scale(1)'
       })),
       state('hide', style({
-        opacity: 0
+        transform: 'scale(0)'
       })),
       transition('show => hide', animate('600ms ease-out')),
       transition('hide => show', animate('1000ms ease-in'))
@@ -23,8 +23,8 @@ export class AnimatedPopupComponent implements OnInit {
 
   // region class variables 
 
-    isModalDisplayed:boolean = false;
-    modalDisplay:string;
+    public isModalDisplayed:boolean = false;
+    public modalDisplay:string;
 
   // endregion class variables
 
@@ -35,7 +35,7 @@ export class AnimatedPopupComponent implements OnInit {
   public ngOnInit(): void {
   }
 
-  get stateName() {
+  public get stateName() {
     return this.isModalDisplayed ? 'show' : 'hide';
     //this returns a STRING value, which will correspond with our animation states!
   }
