@@ -6,6 +6,7 @@ import { carouselImage, CarouselImage } from '../../../models/carousel/carousel-
   templateUrl: './main-content.component.html',
   styleUrls: ['./main-content.component.scss']
 })
+
 export class MainContentComponent implements OnInit {
 
   // region class variables 
