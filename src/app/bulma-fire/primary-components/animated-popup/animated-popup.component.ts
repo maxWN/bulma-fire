@@ -13,7 +13,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
       state('hide', style({
         transform: 'scale(0)'
       })),
-      transition('show => hide', animate('600ms ease-out')),
+      transition('show => hide', animate('1000ms ease-out')),
       transition('hide => show', animate('1000ms ease-in'))
     ])
   ]
@@ -21,7 +21,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 
 export class AnimatedPopupComponent implements OnInit {
 
-  // region class variables 
+  // region class variables
 
     public isModalDisplayed:boolean = false;
     public modalDisplay:string;
@@ -47,7 +47,9 @@ export class AnimatedPopupComponent implements OnInit {
     }
     else {
       this.isModalDisplayed = false;
-      this.modalDisplay = "none";
+      setTimeout(()=> {
+        this.modalDisplay = "none";
+      }, 1000)
     }
   }
 
