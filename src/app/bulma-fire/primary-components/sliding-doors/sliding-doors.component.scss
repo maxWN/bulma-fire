@@ -7,7 +7,7 @@
 }
 
 .container.has-text-centered {
-    background-color: #EFEFEF;
+    background-color: #CCC;
 }
 
 .title {
@@ -26,7 +26,7 @@
     display: inline-flex;
     position: absolute;
     margin-right:0rem;
-    transition-duration: 3s;    
+    // transition-duration: 3s;    
   }
 //   .left-door:active {
 //     margin-left: 20rem;
@@ -41,10 +41,11 @@
     display: inline-flex;
     z-index: 2;
     margin-left:0rem;
-    transition-duration: 3s;
+    // transition-duration: 3s;
     padding-right: 5rem;
     // label the longer right panel, as the 'door'
-  }  
-  .right-door:active {
-    margin-left: 40rem;
-   }
+  }
+//  Uncomment this class, when not using Angular Animations  
+//   .right-door:active {
+//     margin-left: 40rem;
+//    }
