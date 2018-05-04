@@ -20,14 +20,20 @@ import { trigger, keyframes, animate, transition, state, style } from '@angular/
 })
 export class SlidingDoorsComponent implements OnInit {
 
-  areDoorsOpen: boolean=false;
+  //region class variables
+
+  public areDoorsOpen: boolean = false;
+
+  //endregion class variables
 
   constructor() { }
 
-  ngOnInit() {
+  //region public functions
+
+  public ngOnInit() {
   }
 
-  public get stateName() {
+  public get stateName(): string {
     return this.areDoorsOpen ? 'show' : 'hide';
     //this returns a STRING value, which will correspond with our animation states!
   }
@@ -40,5 +46,8 @@ export class SlidingDoorsComponent implements OnInit {
       this.areDoorsOpen = false;
     }
   }
+
+  //endregion public functions
+
   
 }

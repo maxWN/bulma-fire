@@ -4,7 +4,11 @@
     <!-- the following div will contain our new sliding doors component -->
     <!-- [@cardAnimator]="openDoors" (@cardAnimator.done)="resetAnimation()" -->
     <div class="container has-text-centered">
-      <div class="left-door"></div><div class="right-door" [@popupState]="stateName" (click)="openDoors()"></div>
+      <div class="left-door">
+        <div [ngClass]="{ 'hide-inner-content': areDoorsOpen == false, 'show-inner-content': areDoorsOpen == true }">
+          TEST
+        </div>
+      </div><div class="right-door" [@popupState]="stateName" (click)="openDoors()"></div>
       <div class="title">
         Bulma-Fire
       </div>

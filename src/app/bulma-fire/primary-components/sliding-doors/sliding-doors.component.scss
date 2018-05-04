@@ -49,3 +49,16 @@
 //   .right-door:active {
 //     margin-left: 40rem;
 //    }
+
+  .hide-inner-content {
+     display: none;
+     color: #000;
+  }
+
+  .show-inner-content {
+    display: inline-block;
+    color: #000;
+    margin-left: 30rem;
+    bottom: 10rem;
+    position: absolute;
+  }
