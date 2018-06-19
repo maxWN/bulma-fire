@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-// import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { FooterSectionComponent } from './bulma-fire/primary-components/landing-page/footer-section/footer-section.component';
 import { MainContentComponent } from './bulma-fire/primary-components/landing-page/main-content/main-content.component';
@@ -10,14 +9,7 @@ import { SlidingDoorsComponent } from './bulma-fire/primary-components/sliding-d
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StepLadderComponent } from './bulma-fire/primary-components/step-ladder/step-ladder.component';
 import { AnimatedPopupComponent } from './bulma-fire/primary-components/animated-popup/animated-popup.component';
-import { AppRoutingModule } from './bulma-fire/app-routing.module';
-
-// const appRoutes: Routes = [
-//   { path: "", redirectTo: "/dashboard", pathMatch: "full" },
-//   { path: "dashboard", component: MainContentComponent },
-//   { path: "slidingDoors", component: SlidingDoorsComponent },
-//   { path: 'animatedPopup', component: AnimatedPopupComponent }
-// ]
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +24,6 @@ import { AppRoutingModule } from './bulma-fire/app-routing.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule
-    // RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
