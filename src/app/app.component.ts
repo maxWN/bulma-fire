@@ -9,23 +9,23 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
 
-  // region class variables 
-  
+  // region class variables
+
     public title = 'Bulma-Fire';
     public displayDropDown: boolean = false;
     public displayCarousel: boolean  = true;
     public displaySlidingDoors: boolean = false;
     public displayPopup: boolean = false;
 
-  // endregion class variables 
+  // endregion class variables
 
   constructor(private router: Router) {
 
   }
 
-  //region public functions 
+  // region public functions 
 
-  public showDropdown():void {
+  public showDropdown(): void {
     this.displayDropDown = !this.displayDropDown;
   }
 
@@ -50,6 +50,6 @@ export class AppComponent {
     this.displayPopup = true;
   }
 
-  //endregion public functions
+  // endregion public functions
 
 }

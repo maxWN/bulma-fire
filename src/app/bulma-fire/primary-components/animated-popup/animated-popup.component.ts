@@ -37,7 +37,7 @@ export class AnimatedPopupComponent implements OnInit {
 
   public get stateName() {
     return this.isModalDisplayed ? 'show' : 'hide';
-    //this returns a STRING value, which will correspond with our animation states!
+    // this returns a STRING value, which will correspond with our animation states!
   }
 
   public displayModal(): void {
