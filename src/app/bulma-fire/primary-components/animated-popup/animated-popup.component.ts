@@ -32,26 +32,25 @@ export class AnimatedPopupComponent implements OnInit {
 
   // region public functions
 
-  public ngOnInit(): void {
-  }
-
-  public get stateName() {
-    return this.isModalDisplayed ? 'show' : 'hide';
-    // this returns a STRING value, which will correspond with our animation states!
-  }
-
-  public displayModal(): void {
-    if(this.isModalDisplayed == false) {
-      this.isModalDisplayed = true;
-      this.modalDisplay = "inline-block";
+    public ngOnInit(): void {
     }
-    else {
-      this.isModalDisplayed = false;
-      setTimeout(()=> {
-        this.modalDisplay = "none";
-      }, 1000)
+
+    public get stateName() {
+      return this.isModalDisplayed ? 'show' : 'hide';
+      // this returns a STRING value, which will correspond with our animation states!
     }
-  }
+
+    public displayModal(): void {
+      if(this.isModalDisplayed == false) {
+        this.isModalDisplayed = true;
+        this.modalDisplay = "inline-block";
+      } else {
+        this.isModalDisplayed = false;
+        setTimeout(()=> {
+          this.modalDisplay = "none";
+        }, 1000)
+      }
+    }
 
   // endregion public functions
 
