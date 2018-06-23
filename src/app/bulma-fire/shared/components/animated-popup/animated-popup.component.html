@@ -1,21 +1,9 @@
-<div class="popup-container">
-  <section class="section section-buffer">
-    <div class="container">
-      <h1 class="title">Section</h1>
-      <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-      </h2>
-      <button class="button is-primary" (click)="displayModal()">Show Modal</button>
-
-    </div>
-
-
   <div class="modal" [ngStyle]="{'display': modalDisplay}" >
     <div class="modal-background"></div>
     <div class="modal-card" [@popupState]="stateName">
       <header class="modal-card-head">
         <p class="modal-card-title">Bulma-Fire Popup!</p>
-        <button class="delete" aria-label="close" (click)="displayModal()"></button>
+        <button class="delete" aria-label="close" (click)="closeModal()"></button>
       </header>
       <section class="modal-card-body">
         <!-- Content ... -->
@@ -32,6 +20,3 @@
       </footer>
     </div>
   </div>
-
-  </section>
-</div>

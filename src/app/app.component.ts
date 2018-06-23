@@ -43,8 +43,8 @@ export class AppComponent {
     this.displayPopup = false;
   }
 
-  public showAnimatedPopup(): void {
-    this.router.navigate(['/animatedPopup']);
+  public showGeneralTestPopup(): void {
+    this.router.navigate(['/generalTesting']);
     this.displayCarousel = false;
     this.displaySlidingDoors = false;
     this.displayPopup = true;

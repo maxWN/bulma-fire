@@ -8,8 +8,9 @@ import { SlidingDoorsComponent } from './bulma-fire/primary-components/sliding-d
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StepLadderComponent } from './bulma-fire/primary-components/step-ladder/step-ladder.component';
-import { AnimatedPopupComponent } from './bulma-fire/primary-components/animated-popup/animated-popup.component';
+import { TestPageComponent } from './bulma-fire/primary-components/test-page/test-page.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SharedModule } from './bulma-fire/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,14 +19,16 @@ import { AppRoutingModule } from './app-routing.module';
     MainContentComponent,
     SlidingDoorsComponent,
     StepLadderComponent,
-    AnimatedPopupComponent
+    TestPageComponent,
+    // AnimatedPopupComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    SharedModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

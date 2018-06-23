@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
@@ -23,7 +23,7 @@ export class AnimatedPopupComponent implements OnInit {
 
   // region class variables
 
-    public isModalDisplayed:boolean = false;
+    public isModalDisplayed:boolean;
     public modalDisplay:string;
 
   // endregion class variables
@@ -40,16 +40,24 @@ export class AnimatedPopupComponent implements OnInit {
       // this returns a STRING value, which will correspond with our animation states!
     }
 
-    public displayModal(): void {
-      if(this.isModalDisplayed == false) {
+    @Input() set displayModal(value: boolean) {
+      if (this.isModalDisplayed == false && this.isModalDisplayed != undefined) {
         this.isModalDisplayed = true;
         this.modalDisplay = "inline-block";
       } else {
         this.isModalDisplayed = false;
-        setTimeout(()=> {
+        setTimeout(() => {
           this.modalDisplay = "none";
         }, 1000)
       }
+    };
+
+
+    public closeModal(): void {
+      this.isModalDisplayed = false;
+      setTimeout(() => {
+        this.modalDisplay = "none";
+      }, 1000)
     }
 
   // endregion public functions
