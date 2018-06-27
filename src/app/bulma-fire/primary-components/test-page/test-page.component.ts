@@ -18,12 +18,18 @@ export class TestPageComponent implements OnInit {
   }
 
   public openModal(): void {
-    if (!this.isModalActive) {
-      this.isModalActive = true;
-    } else {
-      this.isModalActive = false;
-    }
+    // if (!this.isModalActive) {
+      // this.isModalActive = true;
+    // } else {
+    //   this.isModalActive = false;
+    this.isModalActive = !this.isModalActive;
     // this.modal.displayModal();
+  }
+
+  public handleCloseEvent($event): void {
+    if(typeof($event) == 'boolean') {
+      this.isModalActive = $event;
+    }
   }
 
 }

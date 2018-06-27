@@ -6,7 +6,7 @@
         A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
       </h2>
       <button class="button is-primary" (click)="openModal()">Show Modal</button>
-      <app-animated-popup [displayModal]="isModalActive"></app-animated-popup>
+      <app-animated-popup [isModalDisplayed]="isModalActive" (eventClick)="handleCloseEvent($event)"></app-animated-popup>
     </div>
   </section>
 </div>
