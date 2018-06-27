@@ -27,7 +27,6 @@ export class AnimatedPopupComponent implements OnInit, OnChanges {
     @Input() isModalDisplayed:boolean;
     @Output() eventClick: EventEmitter<any> = new EventEmitter();
     public modalDisplay:string;
-    // public stateName:string='hide';
 
   // endregion class variables
 
@@ -38,31 +37,20 @@ export class AnimatedPopupComponent implements OnInit, OnChanges {
     public ngOnInit(): void {
     }
 
-    public ngOnChanges() {
+    public ngOnChanges(): void {
       this.displayModal();
     }
 
-    public get stateName() {
+    public get stateName(): string {
       return this.isModalDisplayed ? 'show' : 'hide';
       // this returns a STRING value, which will correspond with our animation states!
     }
 
-    public displayModal() {
-      if (this.isModalDisplayed/* == false && this.isModalDisplayed != undefined*/) {
-        // this.isModalDisplayed = false;
-        // this.stateName = 'show';
+    public displayModal(): void {
+      if (this.isModalDisplayed) {
         this.modalDisplay = "inline-block";
       }
-      //  else {
-      //   // this.stateName = 'hide';
-      //   this.isModalDisplayed = false;
-      //   setTimeout(() => {
-      //     this.modalDisplay = "none";
-      //   }, 1000);
-      // }
-      // console.log("value "+this.isModalDisplayed);
     };
-
 
     public closeModal(): void {
       this.isModalDisplayed = false;
@@ -70,8 +58,6 @@ export class AnimatedPopupComponent implements OnInit, OnChanges {
       setTimeout(() => {
         this.modalDisplay = "none";
       }, 1000);
-      console.log("value "+this.isModalDisplayed);
-
     }
 
   // endregion public functions
